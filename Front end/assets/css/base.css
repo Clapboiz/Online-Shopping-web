@@ -1,0 +1,87 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'UTM Avo';
+    src: url('./assets/fonts/UTMAvoBold.eot');
+    src: url('./assets/fonts/UTMAvoBold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/UTMAvoBold.woff2') format('woff2'),
+        url('./assets/fonts/UTMAvoBold.woff') format('woff'),
+        url('./assets/fonts/UTMAvoBold.ttf') format('truetype'),
+        url('./assets/fonts/UTMAvoBold.svg#UTMAvoBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UTM Avo';
+    src: url('./assets/fonts/UTMAvo.eot');
+    src: url('./assets/fonts/UTMAvo.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/UTMAvo.woff2') format('woff2'),
+        url('./assets/fonts/UTMAvo.woff') format('woff'),
+        url('./assets/fonts/UTMAvo.ttf') format('truetype'),
+        url('./assets/fonts/UTMAvo.svg#UTMAvo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UTM Avo';
+    src: url('./assets/fonts/UTMAvo-BoldItalic.eot');
+    src: url('./assets/fonts/UTMAvo-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/UTMAvo-BoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/UTMAvo-BoldItalic.woff') format('woff'),
+        url('./assets/fonts/UTMAvo-BoldItalic.ttf') format('truetype'),
+        url('./assets/fonts/UTMAvo-BoldItalic.svg#UTMAvo-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UTM Avo';
+    src: url('./assets/fonts/UTMAvo-Italic.eot');
+    src: url('./assets/fonts/UTMAvo-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/UTMAvo-Italic.woff2') format('woff2'),
+        url('./assets/fonts/UTMAvo-Italic.woff') format('woff'),
+        url('./assets/fonts/UTMAvo-Italic.ttf') format('truetype'),
+        url('./assets/fonts/UTMAvo-Italic.svg#UTMAvo-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'UTM Avo';
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__fullwidth {
+    width: 100%;
+}
+
+.grid__row {
+    /* Cho lên cùng 1 hàng ngang */
+    display: flex;
+    /* khi vượt quá grid-row thì tự động nhảy xuống hàng */
+    flex-wrap: wrap;
+}
