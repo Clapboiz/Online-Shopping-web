@@ -85,3 +85,14 @@ html {
     /* khi vượt quá grid-row thì tự động nhảy xuống hàng */
     flex-wrap: wrap;
 }
+
+/* Key frame for QR code (Time)  */
+@keyframes Time-qr {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
