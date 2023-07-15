@@ -40,5 +40,5 @@
     border-left: 1px solid #FB9086;
     height: 16px;
     right: -9px;
-    top: 1px;
+    transform: translateY(-90%);
 }
