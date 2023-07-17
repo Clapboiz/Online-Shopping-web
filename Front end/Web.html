@@ -1,112 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shopee</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="./assets/css/base.css">
-        <link rel="stylesheet" href="./assets/css/main.css">
-        <link rel="stylesheet" href="./assets/img/fontawesome-free-6.4.0-web/css/all.min.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/img/fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
 
-    <body>
-        <div class="app">
-            <header class="header">
-                <div class="grid">
-                    <nav class="header__navbar">
-                        <ul class="header__navbar-list">
-                            <li class="header__navbar-item header__navbar-pointer-qrcode header__navbar-item--separate">
-                                Vào cửa hàng
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-pointer-qrcode header__navbar-item--separate">
+                            Vào cửa hàng
 
-                                <!-- QR code -->
-                                <div class="header__navbar-qrcode">
-                                    <img src="./assets/img/qr_code.png" alt="QR Code" class="img__qr-code">
-                                    <div class="qr_apps">
-                                        <img src="./assets/img/App store.png" alt="App store" class="img__downloads">
-                                        <img src="./assets/img/Google play.png" alt="Google play" class="img__downloads">
-                                    </div>
+                            <!-- QR code -->
+                            <div class="header__navbar-qrcode">
+                                <img src="./assets/img/qr_code.png" alt="QR Code" class="img__qr-code">
+                                <div class="qr_apps">
+                                    <img src="./assets/img/App store.png" alt="App store" class="img__downloads">
+                                    <img src="./assets/img/Google play.png" alt="Google play" class="img__downloads">
                                 </div>
-                            </li>
-                            <li class="header__navbar-item">
-                                <span class="header__navbar-item-label--no-pointer">Kết nối</span>
-                                <a href="" class="header__navbar-item-icon">
-                                    <i class="fa-brands fa-facebook"></i>
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
-    
-                        <ul class="header__navbar-list">
-                            <li class="header__navbar-item header__notify-show">
-                                <i class="header__navbar-item-icon fa-solid fa-bell"></i>
-                                <span class="header__navbar-name-notify">Thông báo</span>
-                                <div class="header__notify">
-                                    <header class="header__notify-header">
-                                        <h3>Thông báo mới nhận</h3>                                   
-                                    </header>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item-label--no-pointer">Kết nối</span>
+                            <a href="" class="header__navbar-item-icon">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
 
-                                    <ul class="header__notify-list">
-                                        <li class="header__notify-item header__notify-item--viewed">
-                                            <a href="" class="header__notify-link">
-                                                <img src="https://down-vn.img.susercontent.com/file/vn-50009109-87186ed98227adab30afbe0f244f49a4_xhdpi" alt="img mỹ phẩm" class="header__notify-img">
-                                                <div class="header__notify-info">
-                                                    <span class="header__notify-name">Combo 2 Kem xả Serum 2 trong 1 Dove Hair Therapy Ngăn gãy rụng/ Ngăn lão hóa 230ML (2 chai)</span>
-                                                    <span class="header__notify-descript">Mỹ phẩm chính hãng đến từ Hàn Quốc</span>
-                                                </div>
-                                            </a>
-                                        </li>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__notify-show">
+                            <i class="header__navbar-item-icon fa-solid fa-bell"></i>
+                            <span class="header__navbar-name-notify">Thông báo</span>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
 
-                                        <li class="header__notify-item header__notify-item--viewed">
-                                            <a href="" class="header__notify-link">
-                                                <img src="https://down-vn.img.susercontent.com/file/vn-50009109-87186ed98227adab30afbe0f244f49a4_xhdpi" alt="img mỹ phẩm" class="header__notify-img">
-                                                <div class="header__notify-info">
-                                                    <span class="header__notify-name">Combo 2 Kem xả Serum 2 trong 1 Dove Hair Therapy Ngăn gãy rụng/ Ngăn lão hóa 230ML (2 chai)</span>
-                                                    <span class="header__notify-descript">Mỹ phẩm chính hãng đến từ Hàn Quốc</span>
-                                                </div>
-                                            </a>
-                                        </li>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-50009109-87186ed98227adab30afbe0f244f49a4_xhdpi"
+                                                alt="img mỹ phẩm" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Combo 2 Kem xả Serum 2 trong 1 Dove
+                                                    Hair Therapy Ngăn gãy rụng/ Ngăn lão hóa 230ML (2 chai)</span>
+                                                <span class="header__notify-descript">Mỹ phẩm chính hãng đến từ Hàn
+                                                    Quốc</span>
+                                            </div>
+                                        </a>
+                                    </li>
 
-                                        <li class="header__notify-item header__notify-item--viewed">
-                                            <a href="" class="header__notify-link">
-                                                <img src="https://down-vn.img.susercontent.com/file/vn-50009109-87186ed98227adab30afbe0f244f49a4_xhdpi" alt="img mỹ phẩm" class="header__notify-img">
-                                                <div class="header__notify-info">
-                                                    <span class="header__notify-name">Combo 2 Kem xả Serum 2 trong 1 Dove Hair Therapy Ngăn gãy rụng/ Ngăn lão hóa 230ML (2 chai)</span>
-                                                    <span class="header__notify-descript">Mỹ phẩm chính hãng đến từ Hàn Quốc</span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-50009109-87186ed98227adab30afbe0f244f49a4_xhdpi"
+                                                alt="img mỹ phẩm" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Combo 2 Kem xả Serum 2 trong 1 Dove
+                                                    Hair Therapy Ngăn gãy rụng/ Ngăn lão hóa 230ML (2 chai)</span>
+                                                <span class="header__notify-descript">Mỹ phẩm chính hãng đến từ Hàn
+                                                    Quốc</span>
+                                            </div>
+                                        </a>
+                                    </li>
 
-                                    <footer class="header__notify-footer">
-                                        <a href="" class="header__notify-footer-btn">Xem tất cả</a>
-                                    </footer>
-                                </div>
-                            </li>
-                            <li class="header__navbar-item ">
-                                <i class="header__navbar-item-icon fa-solid fa-circle-question"></i>
-                                Trợ giúp
-                            </li>
-                            <li class="header__navbar-item">
-                                <a href="" class="header__navbar-item-link header__navbar-item--bold header__navbar-item--separate">Đăng ký</a>
-                            </li>
-                            <li class="header__navbar-item">
-                                <a href="" class="header__navbar-item-link header__navbar-item--bold">Đăng nhập</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-50009109-87186ed98227adab30afbe0f244f49a4_xhdpi"
+                                                alt="img mỹ phẩm" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Combo 2 Kem xả Serum 2 trong 1 Dove
+                                                    Hair Therapy Ngăn gãy rụng/ Ngăn lão hóa 230ML (2 chai)</span>
+                                                <span class="header__notify-descript">Mỹ phẩm chính hãng đến từ Hàn
+                                                    Quốc</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
 
-            <div class="container">
-
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item ">
+                            <i class="header__navbar-item-icon fa-solid fa-circle-question"></i>
+                            Trợ giúp
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href=""
+                                class="header__navbar-item-link header__navbar-item--bold header__navbar-item--separate">Đăng
+                                ký</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link header__navbar-item--bold">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+        </header>
 
-            <footer class="footer">
+        <div class="container">
 
-            </footer>
         </div>
-    </body>
+
+        <footer class="footer">
+
+        </footer>
+    </div>
+
+    <!-- modal layout -->
+    <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+
+        <div class="modal__body">
+            <!-- Authenticate form -->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form-switch-btn">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form-form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập username">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập password">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại password">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với Shopee về
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn btn--back">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--fb btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                        <span class="auth-form__socials--tittle">
+                            Kết nối với facebook                            
+                        </span>
+                    </a>
+
+                    <a href="" class="auth-form__socials--gg btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials--tittle">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 
 </html>
