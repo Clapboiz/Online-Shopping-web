@@ -38,6 +38,11 @@
 .header__navbar-item-icon {
     text-decoration: none;
     color: var(--white-color);
+    cursor: pointer;
+}
+
+.header__navbar-name-notify {
+    cursor: pointer;
 }
 
 /* Hover for icon fb & instagram */
@@ -81,6 +86,7 @@
     padding: 8px;
     background-color: var(--white-color);
     display: none;
+    will-change: opacity;
     animation: Time-qr ease-in 0.2s;
 }
 
@@ -109,11 +115,55 @@
 /* CSS Notify */
 .header__notify {
     position: absolute;
-    top: 118%;
+    top: 160%;
     width: 404px;
-    background-color: 1px solid #D3D3D3;
+    border: 1px solid #c3bebe;    
     background-color: var(--white-color);
     right: 0;
+    /*  transform-origin: calc(100% - 20px) top;  // ==> TRUE
+        transform-origin: calc(100%-20px) top; // ==> FALSE
+    ======> Mean: There must be a space between calculations
+    */  
+    will-change: opacity, transform;
+    transform-origin: calc(100% - 20px) top;
+    animation: header__notify-show ease-in 0.2s;
+    display: none;
+}
+
+/* triangle */
+.header__notify::before {
+    content: "";
+    border: 20px solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 12px;
+    top: -30px;
+}
+
+/* bridge */
+.header__notify::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -1px;
+    width: 91px;
+    height: 30px;
+}
+
+.header__notify-show:hover .header__notify{
+    display: block;
+}
+
+@keyframes header__notify-show {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .header__notify-header {
@@ -127,6 +177,7 @@
     font-weight: 300;
     font-size: 1.5rem;
     line-height: 40px;
+    user-select: none;
 }
 
 .header__notify-list {
@@ -164,22 +215,27 @@
     display: block;
     color: var(--black-color);
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .header__notify-descript {
     font-size: 1.2rem;
     line-height: 1.5rem;
     color: #888;
+    /* margin-top bị xung đột với thằng padding ở trên */
+    /* margin-top: 2px; */
 }
 
 .header__notify-footer {
     text-align: center;
-
+    display: flex;
 }
 
 .header__notify-footer-btn {
     text-decoration: none;
     color: var(--text-color);
-    padding: 16px 16px;
+    padding: 8px 48px;
+    margin: auto;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
