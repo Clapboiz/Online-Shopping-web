@@ -343,3 +343,27 @@
 .auth-form__socials--tittle {
     margin: 0 32px;
 }
+
+.auth-form__help {
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+}
+
+.auth-form__help-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.auth-form__help-link.auth-form__help-link--help {
+    color: var(--primary-color);
+}
+
+.auth-form__help-separate {
+    display: block;
+    border-left: 1px solid #c3bebe;
+    height: 18px;
+    margin: 0 15px;
+}
