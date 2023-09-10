@@ -283,33 +283,74 @@
             </div>
         </header>
 
-        <div class="container">
-            <nav class="category">
-                <h3 class="category__heading">
-                    <i class="fa-solid fa-list"></i>
-                    Danh mục
-                </h3>
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fa-solid fa-list"></i>
+                                Danh mục
+                            </h3>
+            
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">
+                                        Mỹ phẩm mặt
+                                    </a>
+                                </li>
+            
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">
+                                        Mỹ phẩm mặt
+                                    </a>
+                                </li>
+            
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">
+                                        Mỹ phẩm mặt
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+    
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__labels">Sắp xếp theo</span>
 
-                <ul class="category-list">
-                    <li class="category-item category-item--active">
-                        <a href="#" class="category-item__link">
-                            Mỹ phẩm mặt
-                        </a>
-                    </li>
+                            <button class="home-filter__btn btn">Phổ biến</button>
+                            <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter__btn btn">Bán chạy</button>
 
-                    <li class="category-item">
-                        <a href="#" class="category-item__link">
-                            Mỹ phẩm mặt
-                        </a>
-                    </li>
+                            <div class="select-input">
+                                <span class="select-input__label">
+                                    Giá
+                                </span>
 
-                    <li class="category-item">
-                        <a href="#" class="category-item__link">
-                            Mỹ phẩm mặt
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+                                <i class="select-input__icon fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>
+                                    /14
+                                </span>
+
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="fa-solid fa-caret-left"></i> 
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="fa-solid fa-caret-right"></i> 
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer class="footer">

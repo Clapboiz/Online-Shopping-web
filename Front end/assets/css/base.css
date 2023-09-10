@@ -76,7 +76,7 @@ html {
 }
 
 .grid {
-    width: 1200px;
+    width: 1300px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -90,6 +90,21 @@ html {
     display: flex;
     /* khi vượt quá grid-row thì tự động nhảy xuống hàng */
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+/* Test */
+.grid__column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.667%;
+}
+
+.grid__column-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.333%;
 }
 
 /* Key frame for QR code (Time)  */
@@ -150,7 +165,7 @@ html {
     border-radius: 2px;
     font-size: 1.5rem;
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: 0 12px;
@@ -176,4 +191,27 @@ html {
     cursor: default;
     background-color: #999;
     color: #ccc;
+}
+
+/* Selecttion */
+.select-input {
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-input__label {
+    font-size: 1.4rem;
+}
+
+.select-input__icon {
+    font-size: 1.4rem;
+    color: #4a4a4a;
+    position: relative;
+    top: 1px;
 }
